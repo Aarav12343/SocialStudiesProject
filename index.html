@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Real Social Studies Project</title>
+    <style>      
+        body{
+        background-color:lightblue;
+        padding-top:50px;
+      }
+      
+      h1{
+        font-family:monospace;
+        color:blue;
+      }
+      
+      img{
+        height:300px;
+        width:300px;
+      }
+      
+      p{
+        font-family:monospace;
+        font-size:20px;
+      }
+      
+      button{
+      height:25px;
+      width:50px;
+      }
+      
+      .iocc{
+        text-align:left;
+        padding-left:100px
+      }
+      .t{
+        text-align:right;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <h1 id = "title">Jewish Immigration to Canada</h1>
+    <div>
+      <span>
+        <img src = "https://duyxryp8txy49.cloudfront.net/images/remembrance/people-and-stories/jewish-canadian-service/Ben-Weider.jpg">
+        <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMthWnKygwPMGWAXdGfp71XXhHabU9iXXUTd-pHGPi6g&s"
+      </span>
+        <p id = "p"></p>
+         <button onclick = "next()" id = "b" >Next</button>
+        </center>
+         <h1 class = "iocc">What are concentration camps?</h1>
+        <span>
+        <img class = "iocc" src = "https://www.worldatlas.com/r/w960-q80/upload/d9/2b/bc/shutterstock-333292880.jpg">
+          <p class = "iocc">
+            A concentration camp is a place where people have little food,and are forced to do forced labor.People often die due to       hunger and overwork.This term is mostly used with the Nazi camps.People were starved,tortured,and overworked.There were also transit camps,where people would wail to be deported to other camps.
+          </p>
+      </span>
+      <br>
+      <br>
+      <div>
+      <h1 class = "t">Companies made by Jewish People in Canada</h1>
+      <p class = "t">Moses Znaimer was born in Tajikistan,but he was raised in Montreal.He is the Co-Founder of CityTV On September 28, 1972 Znaimer and is partner applied for the city's first UHF licence on channel 79.In 1883,CityTV changed it's channel to channel 57.CityTV is now well known across toronto.<p>
+      </div>
+      <br><br>
+      <div>
+       <h1>Kensinton Market<h1>
+         <span>
+         <img src = "https://media.timeout.com/images/102873866/750/422/image.webp">
+         <img src = "https://d3d0lqu00lnqvz.cloudfront.net/media/media/f7d6b468-9be6-42c6-8cab-efe798ba09cf.jpg"
+         </span>
+         <p>It used to be called the Jewish market,but overtime it became a place where all cultures came togther to make a vibrent and     colourfull market.It is located in toronto and is a must see place.</p>
+      </div>
+         <br><br>
+         <center>
+           <div>
+             <p>That are the contrubtions that jewish canadians made to Canada.</p>
+           </div>
+           <br><br>
+           <div>
+           <h1>Sources</h1>
+             <p>1.https://www.canada.ca/en/canadian-heritage/services/canada-holocaust/history.html<br>
+2.https://thecjn.ca/perspectives/opinions/many-jewish-contribution-canada/<br>
+3.https://www.thecanadianencyclopedia.ca/en/article/jewish-canadians<br>
+4 .https://www.youtube.com/watch?v=8E2z9YouMfM<br>
+5.https://www.veterans.gc.ca/eng/remembrance/people-and-stories/jewish-canadian-service<br>
+6.https://thecjn.ca/arts/citytv-50/<br>
+7.https://www.jewage.org/wiki/en/Article:Moses_Znaimer_-_Biography<br>
+8.https://www.theholocaustexplained.org/the-camps/types-of-camps/concentration-camps/<br>
+9.https://www.thecanadianencyclopedia.ca/en/article/kensington-market<br>
+</p>
+             <h1>Image Links</h1>
+             <p>1.https://duyxryp8txy49.cloudfront.net/images/remembrance/people-and-stories/jewish-canadian-service/Ben-Weider.jpg<br>
+2.https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMthWnKygwPMGWAXdGfp71XXhHabU9iXXUTd-pHGPi6g&s<br>
+3.https://www.worldatlas.com/r/w960-q80/upload/d9/2b/bc/shutterstock-333292880.jpg<br>
+4.https://media.timeout.com/images/102873866/750/422/image.webp<br>
+5.https://d3d0lqu00lnqvz.cloudfront.net/media/media/f7d6b468-9be6-42c6-8cab-efe798ba09cf.jpg<br>
+  
+</p>
+           </div>
+           </center>
+    </div>
+    <script> 
+    var index = 0;
+    var info = ["Jewish People Fought In WWII and made major contributions to Canada. An example is Private Ben Weilder, who was a soldier.When the war started many jewish people in Canada enlisted in the war efforts from public encouragement,and a few may have fought because of the things they heard that Hitler was doing.Jewish people fought bravely in the war. ","Jewish people started to immigrate to Canada from 1869 to 1947,and setteled near Qubec City,and later Toronto","Before Britain colonized New France the Jewish People lived in places that New France had not colonized.This was  because it was forbidden for anyone that was not Catholic.However,when Britain colonized New France,the Jewish People started immigrating to Canada.The numbers increased a lot after the WWII ended and they started coming to Canada,the USA,and Britan.","Many people left europe because of WWII and Hitler.A lot of people were devastated after the events of the concentration camps and were looking to make a new life after the camps,so ind hope of a better life,they moved to Canada."
+,"Jewish People speak Yiddish,made synagogeus and are a strong comminuty, but they face anti-semetisim around the globe and it is unacceptable that they have to face this.There are still some people that think that Hitler was right,even though he wasn’t."];
+    
+    document.getElementById("p").innerHTML = info[0];
+    function next(){
+    document.getElementById("p").innerHTML = info[index]; 
+    index++
+    if (index>4){
+     indeax = 0;
+    }
+}
+
+    
+</script>
+  </body>
+</html>
